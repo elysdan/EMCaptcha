@@ -11,7 +11,7 @@ return [
     | Options: 'easy' (1-9), 'medium' (10-99), 'hard' (100-999)
     |
     */
-    'difficulty' => 'medium',
+    'difficulty' => 'easy',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | Supported: '+', '-', '*'
     |
     */
-    'operations' => ['+', '-', '*'],
+    'operations' => ['+', '-'],
 
     /*
     |--------------------------------------------------------------------------
@@ -30,9 +30,9 @@ return [
     |--------------------------------------------------------------------------
     */
     'image' => [
-        'width'      => 200,
-        'height'     => 70,
-        'font_size'  => 28,
+        'width'      => 120,
+        'height'     => 40,
+        'font_size'  => 50,
         'bg_color'   => '#ffffff',
         'text_color' => '#333333',
         'noise_lines' => 5,
@@ -57,6 +57,6 @@ return [
     | Number of minutes before the captcha expires.
     |
     */
-    'expire_minutes' => 5,
+    'expire_minutes' => 30,
 
 ];

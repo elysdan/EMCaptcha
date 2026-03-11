@@ -8,7 +8,7 @@
     <button
         type="button"
         onclick="refreshEMCaptcha()"
-        style="background: none; border: 1px solid #ccc; border-radius: 4px; padding: 6px 10px; cursor: pointer; font-size: 18px;"
+        style="background: none; border: 1px solid #ccc; border-radius: 4px; padding: 2px 2px; cursor: pointer; font-size: 18px;"
         title="Generar nuevo captcha"
     >&#x1F504;</button>
     <input
@@ -17,7 +17,7 @@
         id="emcaptcha-input"
         placeholder="{{ $placeholder ?? 'Resultado' }}"
         required
-        style="border: 1px solid #ccc; border-radius: 4px; padding: 6px 10px; width: 100px; font-size: 16px;"
+        style="border: 1px solid #ccc; border-radius: 4px; padding: 6px 10px; width: 100%; font-size: 16px;"
     >
 </div>
 
