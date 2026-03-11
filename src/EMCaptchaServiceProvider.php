@@ -29,19 +29,16 @@ class EMCaptchaServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Publish configuration
         $this->publishes([
             __DIR__ . '/../config/emcaptcha.php' => config_path('emcaptcha.php'),
         ], 'emcaptcha-config');
 
-        // Load routes
         $this->loadRoutesFrom(__DIR__ . '/Http/routes.php');
 
-        // Load views
         $this->loadViewsFrom(__DIR__ . '/Views', 'emcaptcha');
 
-        // Register Blade component: <x-emcaptcha />
-        Blade::component('emcaptcha', \Illuminate\View\Component::class);
+        Blade::component('emcaptcha::captcha', 'emcaptcha');
+
         Blade::include('emcaptcha::captcha', 'emcaptcha');
     }
 }
